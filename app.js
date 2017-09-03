@@ -12,7 +12,9 @@ var server = app.listen(3000, function(){
     console.log("Node.js is listening to PORT:" + server.address().port);
 });
 
+app.use(express.static('public'));
+
 // 写真リストを取得するAPI
-app.get("/index", function(req, res, next){
+app.get("/lifull/index", function(req, res, next){
     res.render('index.ejs');
 });
