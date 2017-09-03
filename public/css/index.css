@@ -1,0 +1,264 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 260%;
+    color: #111;
+}
+
+.sec-header {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 50px;
+    padding: 20px 0 20px 20px;
+    background: #11aa88;
+    font-weight: bold;
+    font-family: 'Courier';
+    color: #fff;
+}
+
+.mod-header {
+    text-align: center;
+}
+
+.mod-header .menu {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-image: url(/img/menu.svg);
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+.mod-header .logo {
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.mod-header .logo span {
+    text-align: center;
+}
+
+.mod-header .logo .serviceName {
+    display: block;
+    font-size: 160%;
+}
+
+.mod-header .logo .at {
+    color: #eee;
+}
+
+.sec-contents {
+    height: 100%;
+}
+
+.mod-body {
+    padding: 20px;
+    background: #f2f2f2;
+    height: 100%;
+}
+
+.mod-body .lunchItem {
+    margin: 30px 0 0 0;
+    padding: 30px 20px;
+    background: #fff;
+    border-top: 3px solid #ddd;
+    border-right: 3px solid #bbb;
+    border-bottom: 3px solid #999;
+    border-left: 3px solid #ccc;
+}
+
+.mod-body .lunchItem .about {
+    display: flex;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 30px;
+}
+
+.mod-body .lunchItem .about .date {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 170px;
+    height: 170px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background: #9fd;
+}
+
+.mod-body .lunchItem .about .date .month {
+    position: absolute;
+    z-index: 100;
+    display: block;
+    color: #181;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.mod-body .lunchItem .about .date .day {
+    position: absolute;
+    z-index: 100;
+    top: 80px;
+    display: block;
+    color: #181;
+    font-weight: bold;
+    font-size: 160%;
+}
+
+.mod-body .lunchItem .about .date .jp {
+    font-size: 70%;
+    color: #4b4;
+}
+
+.mod-body .lunchItem .about .date .dayOfTheWeek {
+    position: absolute;
+    padding: 0 0 5px 5px;
+    top: 10px;
+    right: 0;
+    color: #ccc;
+    font-family: 'arial black';
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+.mod-body .lunchItem .about .date .time {
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    color: #181;
+}
+
+.mod-body .lunchItem .about .summary {
+    vertical-align: top;
+    padding: 0 20px 0 20px;
+}
+
+.mod-body .lunchItem .about .summary .title {
+    margin-bottom: 40px;
+}
+
+.mod-body .lunchItem .about .summary .title span {
+    font-size: 150%;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-weight: bold;
+}
+
+.mod-body .lunchItem .about .summary .condition {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #666;
+}
+
+.mod-body .lunchItem .about .summary .condition.max {
+    background: #fee;
+}
+
+.mod-body .lunchItem .about .summary .condition.max .maxPeopleNum {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 140%;
+    color: #b66;
+}
+
+.mod-body .lunchItem .about .summary .num {
+    text-align: right;
+}
+
+.mod-body .lunchItem .about .summary .condition.min {
+    background: #eef;
+}
+
+.mod-body .lunchItem .about .summary .condition.min .minPeopleNum {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 140%;
+    color: #66b;
+}
+
+.mod-body .lunchItem .current {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.mod-body .lunchItem .current .now,
+.mod-body .lunchItem .current .remain
+{
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.mod-body .lunchItem .current .now .nowPeopleNum {
+    display: inline-block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #181;
+    font-size: 130%;
+}
+
+.mod-body .lunchItem .current .remain {
+    position: relative;
+    border: 1px solid #555;
+    border-radius: 15px;
+}
+
+.mod-body .lunchItem .current .remain .remainPeopleNum{
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: bold;
+    color: #b22;
+    font-size: 150%;
+}
+
+.mod-body .lunchItem .current .remain .remainPeopleNum:before {
+    content: '';
+    position: absolute;
+	top: 50%;
+	left: -23px;
+ 	margin-top: -12px;
+	border: 12px solid transparent;
+	border-right: 12px solid #FFF;
+ 	z-index: 2;
+}
+
+.mod-body .lunchItem .current .remain .remainPeopleNum:after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -28px;
+ 	margin-top: -14px;
+	border: 14px solid transparent;
+	border-right: 14px solid #777;
+ 	z-index: 1;
+}
+
+.buttonArea .attend button {
+    margin-top: 20px;
+    padding: 20px 0;
+    width: 100%;
+    display: inline-block;
+    color: #181;
+    font-weight: bold;
+    font-size: 130%;
+    background: #fff;
+    border-radius: 25px;
+    border-top: 6px solid #aca;
+    border-left: 6px solid #aca;
+    border-right: 6px solid #181;
+    border-bottom: 6px solid #181;
+}
+
+.buttonArea .attend button img {
+    display: inline-block;
+    margin-right: 20px;
+    width: 73px;
+    height: 73px;
+    vertical-align: middle;
+}
