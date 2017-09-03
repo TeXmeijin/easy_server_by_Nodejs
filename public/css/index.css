@@ -1,10 +1,12 @@
 html, body {
     height: 100%;
+    overflow: scroll;
 }
 
 body {
     font-size: 260%;
-    color: #111;
+    color: #333;
+    background: #f2f2f2;
 }
 
 .sec-header {
@@ -13,6 +15,7 @@ body {
     min-height: 50px;
     padding: 20px 0 20px 20px;
     background: #11aa88;
+    background: #181;
     font-weight: bold;
     font-family: 'Courier';
     color: #fff;
@@ -87,14 +90,14 @@ body {
     height: 170px;
     padding: 20px 10px;
     border-radius: 10px;
-    background: #9fd;
+    background: #c9ffed;
 }
 
 .mod-body .lunchItem .about .date .month {
     position: absolute;
     z-index: 100;
     display: block;
-    color: #181;
+    color: #aaa;
     font-weight: bold;
     font-size: 120%;
 }
@@ -111,7 +114,7 @@ body {
 
 .mod-body .lunchItem .about .date .jp {
     font-size: 70%;
-    color: #4b4;
+    color: #aaa;
 }
 
 .mod-body .lunchItem .about .date .dayOfTheWeek {
@@ -119,7 +122,7 @@ body {
     padding: 0 0 5px 5px;
     top: 10px;
     right: 0;
-    color: #ccc;
+    color: #181;
     font-family: 'arial black';
     border-left: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
@@ -129,7 +132,7 @@ body {
     position: absolute;
     top: 180px;
     left: 20px;
-    color: #181;
+    color: #aaa;
 }
 
 .mod-body .lunchItem .about .summary {
@@ -138,7 +141,7 @@ body {
 }
 
 .mod-body .lunchItem .about .summary .title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .mod-body .lunchItem .about .summary .title span {
@@ -241,18 +244,15 @@ body {
 
 .buttonArea .attend button {
     margin-top: 20px;
-    padding: 20px 0;
+    padding: 40px 0;
     width: 100%;
     display: inline-block;
     color: #181;
     font-weight: bold;
     font-size: 130%;
-    background: #fff;
-    border-radius: 25px;
-    border-top: 6px solid #aca;
-    border-left: 6px solid #aca;
-    border-right: 6px solid #181;
-    border-bottom: 6px solid #181;
+    background: #c9ffed;
+    /* border-radius: 25px; */
+    /* border: 0px solid #ccc; */
 }
 
 .buttonArea .attend button img {
