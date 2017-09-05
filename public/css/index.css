@@ -143,7 +143,7 @@ body {
 }
 
 .mod-body .lunchItem .about .summary .title {
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 }
 
 .mod-body .lunchItem .about .summary .title span {
@@ -156,11 +156,12 @@ body {
 .mod-body .lunchItem .about .summary .condition {
     display: inline-block;
     border-radius: 10px;
-    color: #666;
+    color: #aaa;
+    font-size: 90%;
 }
 
 .mod-body .lunchItem .about .summary .condition.max {
-    padding: 5px 20px;
+    padding: 10px 20px;
     background: #fee;
 }
 
@@ -181,9 +182,9 @@ body {
 .mod-body .lunchItem .about .summary .condition.max .maxPeopleNum {
     display: inline-block;
     margin: 0 10px;
-    font-size: 120%;
+    font-size: 130%;
     color: #b66;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .mod-body .lunchItem .about .summary .num {
@@ -198,9 +199,9 @@ body {
 .mod-body .lunchItem .about .summary .condition.min .minPeopleNum {
     display: inline-block;
     margin: 0 10px;
-    font-size: 120%;
+    font-size: 130%;
     color: #66b;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .mod-body .lunchItem .current {
@@ -219,10 +220,10 @@ body {
 
 .mod-body .lunchItem .current .now .nowPeopleNum {
     display: inline-block;
-    margin: 10px 10px;
+    margin: 10px 8px;
     font-weight: bold;
     color: #181;
-    font-size: 140%;
+    font-size: 160%;
 }
 
 .mod-body .lunchItem .current .remain {
