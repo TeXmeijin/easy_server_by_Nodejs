@@ -67,8 +67,8 @@ body {
 }
 
 .mod-body .lunchItem {
-    margin: 30px 0 0 0;
-    padding: 30px 20px;
+    margin: 50px 0 0 0;
+    padding: 40px 40px;
     background: #fff;
     border-top: 3px solid #ddd;
     border-right: 3px solid #bbb;
@@ -86,8 +86,8 @@ body {
     flex-shrink: 0;
     box-sizing: border-box;
     position: relative;
-    width: 170px;
-    height: 170px;
+    width: 190px;
+    height: 190px;
     padding: 20px 10px;
     border-radius: 10px;
     background: #c9ffed;
@@ -99,17 +99,17 @@ body {
     display: block;
     color: #aaa;
     font-weight: bold;
-    font-size: 120%;
+    font-size: 130%;
 }
 
 .mod-body .lunchItem .about .date .day {
     position: absolute;
     z-index: 100;
-    top: 80px;
+    top: 100px;
     display: block;
     color: #181;
     font-weight: bold;
-    font-size: 160%;
+    font-size: 180%;
 }
 
 .mod-body .lunchItem .about .date .jp {
@@ -119,29 +119,31 @@ body {
 
 .mod-body .lunchItem .about .date .dayOfTheWeek {
     position: absolute;
-    padding: 0 0 5px 5px;
+    padding: 0 0 10px 10px;
     top: 10px;
-    right: 0;
+    right: 5px;
     color: #181;
     font-family: 'arial black';
+    font-size: 110%;
+    font-weight: bold;
     border-left: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
 }
 
 .mod-body .lunchItem .about .date .time {
     position: absolute;
-    top: 180px;
-    left: 20px;
+    top: 200px;
+    left: 30px;
     color: #aaa;
 }
 
 .mod-body .lunchItem .about .summary {
     vertical-align: top;
-    padding: 0 20px 0 20px;
+    padding: 0 0 0 30px;
 }
 
 .mod-body .lunchItem .about .summary .title {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .mod-body .lunchItem .about .summary .title span {
@@ -208,7 +210,7 @@ body {
 
 .mod-body .lunchItem .current .remain {
     position: relative;
-    border: 1px solid #555;
+    border: 3px solid #eee;
     border-radius: 15px;
 }
 
@@ -238,7 +240,7 @@ body {
 	left: -28px;
  	margin-top: -14px;
 	border: 14px solid transparent;
-	border-right: 14px solid #777;
+	border-right: 14px solid #ccc;
  	z-index: 1;
 }
 
@@ -250,9 +252,9 @@ body {
     color: #181;
     font-weight: bold;
     font-size: 130%;
-    background: #c9ffed;
-    /* border-radius: 25px; */
-    /* border: 0px solid #ccc; */
+    background: #fff;
+    border-radius: 25px;
+    border: 3px solid #181;
 }
 
 .buttonArea .attend button img {
