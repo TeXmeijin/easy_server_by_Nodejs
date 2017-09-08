@@ -14,7 +14,9 @@ var server = app.listen(3000, function(){
 
 app.use(express.static('public'));
 
-// 写真リストを取得するAPI
 app.get("/lifull/index", function(req, res, next){
     res.render('index.ejs');
+});
+app.get("/lifull/index2", function(req, res, next){
+    res.render('index2.ejs');
 });
