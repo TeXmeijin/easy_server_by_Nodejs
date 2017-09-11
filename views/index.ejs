@@ -2,164 +2,52 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>HTML 5 complete</title>
+<title>Make number GAME</title>
 <link rel="stylesheet" type="text/css" href="/css/reset.css">
 <link rel="stylesheet" type="text/css" href="/css/index.css">
+<script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script  src="/js/index.js"></script>
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 </head>
 <body>
 
-<div class="sec-header">
-    <div class="mod-header">
-        <div class="menu"></div>
-        <div class="logo">
-            <span class="serviceName">LunchMatch</span>
-            <span class="at">@LIFULL</span>
+<div class="sec-contents" id="prg-contents">
+    <div class="mod-body">
+        <div class="proceed">
+            <div class="number goal">4900</div>
+            <div class="operator">=</div>
+            <div class="number first">8200</div>
+            <div class="operator">＋</div>
+            <div class="number second">-3300</div>
+        </div>
+        <div class="numbers" id="prg-numbers">
+            <div class="number">8200</div>
+            <div class="number">540</div>
+            <div class="number">-3300</div>
+            <div class="number">3</div>
+            <div class="number">-100</div>
+            <div class="number">5500</div>
+            <div class="number">-0.02</div>
+            <div class="number">0.9</div>
+        </div>
+        <div class="operators">
+            <div class="operator">＋</div>
+            <div class="operator">ー</div>
+            <div class="operator">×</div>
+            <div class="operator">÷</div>
         </div>
     </div>
-</div>
-<div class="sec-contents">
-    <div class="mod-body">
-        <ul class="lunchItem">
-            <div class="about">
-                <div class="date">
-                    <span class="month">12<span class="jp">月</span></span>
-                    <span class="day">29<span class="jp">日</span></span>
-                    <span class="dayOfTheWeek">金</span>
-                    <span class="time">13:00</span>
-                </div>
-                <div class="summary">
-                    <div class="title">
-                        <span>そばうさでエンジニアトーク！</span>
-                    </div>
-                    <div class="num">
-                        <span class="condition max">最大<span class="maxPeopleNum">4</span>人</span>
-                        <span class="condition min">最小<span class="minPeopleNum">2</span>人</span>
-                    </div>
-                </div>
-            </div>
-            <div class="current">
-                <span class="now">
-                    現在の参加人数：<span class="nowPeopleNum">3</span>人
-                </span>
-                <span class="remain">
-                    あと<span class="remainPeopleNum">1</span>人まで
-                </span>
-            </div>
-        </ul>
-        <ul class="lunchItem">
-            <div class="about">
-                <div class="date">
-                    <span class="month">12<span class="jp">月</span></span>
-                    <span class="day">29<span class="jp">日</span></span>
-                    <span class="dayOfTheWeek">金</span>
-                    <span class="time">13:00</span>
-                </div>
-                <div class="summary">
-                    <div class="title">
-                        <span>そばうさでエンジニアトーク！</span>
-                    </div>
-                    <div class="num">
-                        <span class="condition max">最大<span class="maxPeopleNum">4</span>人</span>
-                        <span class="condition min">最小<span class="minPeopleNum">2</span>人</span>
-                    </div>
-                </div>
-            </div>
-            <div class="current">
-                <span class="now">
-                    現在の参加人数：<span class="nowPeopleNum">3</span>人
-                </span>
-                <span class="remain">
-                    あと<span class="remainPeopleNum">1</span>人まで
-                </span>
-            </div>
-        </ul>
-        <ul class="lunchItem">
-            <div class="about">
-                <div class="date">
-                    <span class="month">12<span class="jp">月</span></span>
-                    <span class="day">29<span class="jp">日</span></span>
-                    <span class="dayOfTheWeek">金</span>
-                    <span class="time">13:00</span>
-                </div>
-                <div class="summary">
-                    <div class="title">
-                        <span>そばうさでエンジニアトーク！</span>
-                    </div>
-                    <div class="num">
-                        <span class="condition max">最大<span class="maxPeopleNum">4</span>人</span>
-                        <span class="condition min">最小<span class="minPeopleNum">2</span>人</span>
-                    </div>
-                </div>
-            </div>
-            <div class="current">
-                <span class="now">
-                    現在の参加人数：<span class="nowPeopleNum">3</span>人
-                </span>
-                <span class="remain">
-                    あと<span class="remainPeopleNum">1</span>人まで
-                </span>
-            </div>
-        </ul>
-        <ul class="lunchItem">
-            <div class="about">
-                <div class="date">
-                    <span class="month">12<span class="jp">月</span></span>
-                    <span class="day">29<span class="jp">日</span></span>
-                    <span class="dayOfTheWeek">金</span>
-                    <span class="time">13:00</span>
-                </div>
-                <div class="summary">
-                    <div class="title">
-                        <span>そばうさでエンジニアトーク！</span>
-                    </div>
-                    <div class="num">
-                        <span class="condition max">最大<span class="maxPeopleNum">4</span>人</span>
-                        <span class="condition min">最小<span class="minPeopleNum">2</span>人</span>
-                    </div>
-                </div>
-            </div>
-            <div class="current">
-                <span class="now">
-                    現在の参加人数：<span class="nowPeopleNum">3</span>人
-                </span>
-                <span class="remain">
-                    あと<span class="remainPeopleNum">1</span>人まで
-                </span>
-            </div>
-        </ul>
-        <ul class="lunchItem">
-            <div class="about">
-                <div class="date">
-                    <span class="month">12<span class="jp">月</span></span>
-                    <span class="day">29<span class="jp">日</span></span>
-                    <span class="dayOfTheWeek">金</span>
-                    <span class="time">13:00</span>
-                </div>
-                <div class="summary">
-                    <div class="title">
-                        <span>そばうさでエンジニアトーク！</span>
-                    </div>
-                    <div class="num">
-                        <span class="condition max">最大<span class="maxPeopleNum">4</span>人</span>
-                        <span class="condition min">最小<span class="minPeopleNum">2</span>人</span>
-                    </div>
-                </div>
-            </div>
-            <div class="current">
-                <span class="now">
-                    現在の参加人数：<span class="nowPeopleNum">3</span>人
-                </span>
-                <span class="remain">
-                    あと<span class="remainPeopleNum">1</span>人まで
-                </span>
-            </div>
-        </ul>
+    <div class="mod-score">
+        <div class="winlose">
+            <span class="win">0</span>
+            <span class="text">勝</span>
+            <span class="lose">0</span>
+            <span class="text">敗</span>
+        </div>
     </div>
 </div>
 
 </body>
 </html>
-
