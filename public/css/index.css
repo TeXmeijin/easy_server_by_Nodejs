@@ -16,7 +16,7 @@
     width: 30%;
     font-size: 200%;
 }
-.mod-body .proceed .operator {
+.mod-body .proceed .operator, .mod-body .proceed .equal {
     font-size: 150%;
 }
 .mod-body .numbers {
@@ -56,4 +56,7 @@
     font-size: 300%;
     text-align: center;
     line-height: 80px;
+}
+.gray {
+    background: #eee !important;
 }
