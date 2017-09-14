@@ -1,3 +1,6 @@
+body {
+    font-size: 200%;
+}
 .mod-body {
     width: 940px;
     margin: 0 auto;
@@ -8,13 +11,27 @@
     background: #444;
     text-align: center;
 }
-.mod-body .proceed > div {
+.mod-body .proceed .part {
+    margin: 25px 0;
+}
+.mod-body .proceed .part > div {
+    vertical-align: middle;
     display: inline-block;
     color: rgb(255, 255, 255);
 }
+.mod-body .proceed .part .first,
+.mod-body .proceed .part .second {
+    width: 35%;
+    min-height: 90px;
+    line-height: 90px;
+    background: #ccc;
+    color: #333;
+}
+.mod-body .proceed .part .operator {
+    margin: 0 30px;
+}
 .mod-body .proceed .number {
-    width: 30%;
-    font-size: 200%;
+    font-size: 150%;
 }
 .mod-body .proceed .operator, .mod-body .proceed .equal {
     font-size: 150%;
@@ -27,14 +44,15 @@
     box-sizing: border-box;
     margin-left: 60px;
     margin-bottom: 30px;
-    width: 190px;
+    width: 440px;
     display: inline-block;
     border-radius: 20px;
-    padding: 30px;
+    padding: 50px 30px;
     background: #ed6103;
     letter-spacing: normal;
     color: rgb(255, 255, 255);
     text-align: center;
+    font-size: 150%;
 }
 .mod-body .operators {
     margin-top: 20px;
