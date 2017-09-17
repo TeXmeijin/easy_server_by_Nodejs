@@ -1,5 +1,9 @@
 body {
+    font-family: 'Comic Sans MS';
     font-size: 200%;
+}
+.is-hide {
+    display: none;
 }
 .mod-body {
     width: 940px;
@@ -7,7 +11,7 @@ body {
 }
 .mod-body .proceed {
     margin: 20px 0px 50px 0px;
-    padding: 40px;
+    padding: 30px;
     background: #444;
     text-align: center;
 }
@@ -24,11 +28,17 @@ body {
     width: 35%;
     min-height: 90px;
     line-height: 90px;
-    background: #ccc;
+    background: #ffffee;
     color: #333;
 }
 .mod-body .proceed .part .operator {
+    width: 10%;
+    min-height: 90px;
+    line-height: 90px;
     margin: 0 30px;
+    background: #ccc;
+    color: #333;
+    font-weight: bold;
 }
 .mod-body .proceed .number {
     font-size: 150%;
@@ -74,6 +84,26 @@ body {
     font-size: 300%;
     text-align: center;
     line-height: 80px;
+}
+.mod-footer {
+    padding: 40px 10px;
+    position: fixed;
+    bottom: 0;
+    background: #333;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.mod-footer .result, .mod-footer .time {
+    display: inline-block;
+}
+.mod-footer .result .count, .mod-footer .result .correct {
+    font-size: 250%;
+    margin: 0 20px;
+}
+.mod-footer .time .count {
+    font-size: 250%;
+    margin: 0 20px;
 }
 .gray {
     background: #eee !important;

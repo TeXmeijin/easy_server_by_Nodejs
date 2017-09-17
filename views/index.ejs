@@ -2,11 +2,15 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Make number GAME</title>
+<title>Make the Number</title>
 <link rel="stylesheet" type="text/css" href="/css/reset.css">
 <link rel="stylesheet" type="text/css" href="/css/index.css">
+<link rel="stylesheet" type="text/css" href="/css/modal.css">
 <script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script  src="/js/pubsub.js"></script>
 <script  src="/js/index.js"></script>
+<script  src="/js/modal.js"></script>
+<script  src="/js/timer.js"></script>
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -17,26 +21,26 @@
     <div class="mod-body">
         <div class="proceed" id="prg-proceed">
             <ul class="part">
-                <div class="number goal">4900</div>
+                <div class="number goal"></div>
             </ul>
             <ul class="part">
                 <div class="equal">=</div>
             </ul>
             <ul class="part">
-                <div class="number first">8200</div>
-                <div class="operator">＋</div>
-                <div class="number second">-3300</div>
+                <div class="number first"></div>
+                <div class="operator"></div>
+                <div class="number second"></div>
             </ul>
         </div>
         <div class="numbers" id="prg-numbers">
-            <div class="number">8200</div>
-            <div class="number">540</div>
-            <div class="number">-3300</div>
-            <div class="number">3</div>
-            <div class="number">-100</div>
-            <div class="number">5500</div>
-            <div class="number">-0.02</div>
-            <div class="number">0.9</div>
+            <div class="number"></div>
+            <div class="number"></div>
+            <div class="number"></div>
+            <div class="number"></div>
+            <div class="number"></div>
+            <div class="number"></div>
+            <div class="number"></div>
+            <div class="number"></div>
         </div>
         <div class="operators" id="prg-operators">
             <div class="operator gray" data-operator="+">＋</div>
@@ -45,12 +49,62 @@
             <div class="operator gray" data-operator="/">÷</div>
         </div>
     </div>
-    <div class="mod-score">
-        <div class="winlose">
-            <span class="win">0</span>
-            <span class="text">勝</span>
-            <span class="lose">0</span>
-            <span class="text">敗</span>
+
+    <div class="mod-footer" id="prg-footer">
+        <div class="result">
+            <span class="count" id="prg-count">0</span>
+            <span class="text">問中</span>
+            <span class="correct" id="prg-correct">0</span>
+            <span class="text">問正解</span>
+        </div>
+        <div class="time">残り<span class="count" id="prg-timeLimit"></span>秒</div>
+    </div>
+
+</div>
+
+<div class="modalBack is-hide">
+    <div class="modal ruleExplain is-hide">
+        <div class="title">遊び方</div>
+        <div class="sentence">
+            <ul class="howtouse">
+                <li class="item">Make the Numberは、指定された数を8つの数と4つの演算子で、できるだけ速く作るゲームです</li>
+                <li class="item">画面上部に出てきた数を見て、その数を作りましょう</li>
+                <li class="item">まずはオレンジ色の8つのボタンに書かれた数値を選びます</li>
+                <li class="item">次に加算、減算、乗算、除算から演算子を選択します</li>
+                <li class="item">最後にもう一度数値を選ぶと、計算されて正誤がわかります</li>
+                <li class="item">できるだけ短い時間で多くの正解を出せるように頑張りましょう</li>
+            </ul>
+        </div>
+        <div class="buttonArea">
+            <div class="closeBtn gameStart">GAME START</div>
+        </div>
+    </div>
+    <div class="modal correct is-hide">
+        <div class="msg">正解です！</div>
+        <div class="example">回答例</div>
+        <div class="detail"></div>
+        <div class="buttonArea">
+            <div class="closeBtn">NEXT</div>
+        </div>
+    </div>
+    <div class="modal incorrect is-hide">
+        <div class="msg">不正解です。。。</div>
+        <div class="example">回答例</div>
+        <div class="detail"></div>
+        <div class="buttonArea">
+            <div class="closeBtn">NEXT</div>
+        </div>
+    </div>
+    <div class="modal result is-hide">
+        <div class="title">結果発表！</div>
+        <div class="result">
+            <span class="count"></span>
+            <span class="text">問中</span>
+            <span class="correct"></span>
+            <span class="text">問正解</span>
+        </div>
+        <div class="buttonArea">
+            <div class="closeBtn gameStart">NEXT GAME</div>
         </div>
     </div>
 </div>
