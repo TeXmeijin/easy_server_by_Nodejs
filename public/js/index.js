@@ -7,10 +7,6 @@ $(() => {
             this.proceed = this.root.find('#prg-proceed');
             this.footer = this.root.find('#prg-footer');
 
-            this.randBase = 10;
-            this.randMax = 15;
-            this.randMin = -15;
-
             this.initView();
             this.bindAllListeners();
             this.resetParams();
@@ -19,6 +15,10 @@ $(() => {
             this.prepareQuestion();
         }
         initView() {
+            this.randBase = 10;
+            this.randMax = 15;
+            this.randMin = -15;
+
             this.footer.find('#prg-count').text('0');
             this.footer.find('#prg-correct').text('0');
             this.footer.find('#prg-timeLimit').text('120');
