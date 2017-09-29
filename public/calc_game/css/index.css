@@ -1,0 +1,114 @@
+body {
+    font-family: 'Comic Sans MS';
+    font-size: 200%;
+}
+.is-hide {
+    display: none;
+}
+.mod-body {
+    width: 940px;
+    margin: 0 auto;
+}
+.mod-body .proceed {
+    margin: 20px 0px 40px 0px;
+    padding: 20px;
+    background: #444;
+    text-align: center;
+}
+.mod-body .proceed .part {
+    margin: 25px 0;
+}
+.mod-body .proceed .part {
+    font-size: 120%;
+    font-weight: bold;
+}
+.mod-body .proceed .part > div {
+    vertical-align: middle;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+}
+.mod-body .proceed .part .first,
+.mod-body .proceed .part .second {
+    width: 35%;
+    min-height: 90px;
+    line-height: 90px;
+    background: #ffffee;
+    color: #333;
+}
+.mod-body .proceed .part .operator {
+    width: 10%;
+    min-height: 90px;
+    line-height: 90px;
+    margin: 0 30px;
+    background: #ccc;
+    color: #333;
+    font-weight: bold;
+}
+.mod-body .proceed .number {
+    font-size: 150%;
+}
+.mod-body .proceed .operator, .mod-body .proceed .equal {
+    font-size: 150%;
+}
+.mod-body .numbers {
+    margin-left: -60px;
+    letter-spacing: -.40em;
+}
+.mod-body .numbers .number {
+    box-sizing: border-box;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    width: 440px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 50px 30px;
+    background: #ed6103;
+    letter-spacing: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 150%;
+}
+.mod-body .operators {
+    margin-top: 20px;
+    margin-right: 68px;
+    letter-spacing: -.40em;
+}
+.mod-body .operators .operator {
+    box-sizing: border-box;
+    margin-left: 68px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 30px;
+    background: #2255bb;
+    letter-spacing: normal;
+    color: rgb(255, 255, 255);
+    font-size: 300%;
+    text-align: center;
+    line-height: 80px;
+}
+.mod-footer {
+    padding: 20px 10px;
+    position: fixed;
+    bottom: 0;
+    background: #333;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.mod-footer .result, .mod-footer .time {
+    display: inline-block;
+}
+.mod-footer .result .count, .mod-footer .result .correct {
+    font-size: 250%;
+    margin: 0 20px;
+}
+.mod-footer .time .count {
+    font-size: 250%;
+    margin: 0 20px;
+}
+.gray {
+    background: #eee !important;
+}

@@ -1,0 +1,285 @@
+html, body {
+    height: 100%;
+    overflow: scroll;
+    font-family: 'Verdana', 'ヒラギノ角ゴ ProN W6', '游ゴシック', 'Droid Sans';
+}
+
+body {
+    font-size: 260%;
+    color: #333;
+    background: #f2f2f2;
+}
+
+.sec-header {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 50px;
+    padding: 20px 0 20px 20px;
+    background: #181;
+    font-weight: bold;
+    font-family: 'Courier';
+    color: #fff;
+}
+
+.mod-header {
+    text-align: center;
+}
+
+.mod-header .menu {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-image: url(/img/menu.svg);
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+.mod-header .logo {
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.mod-header .logo span {
+    text-align: center;
+}
+
+.mod-header .logo .serviceName {
+    display: block;
+    font-size: 160%;
+}
+
+.mod-header .logo .at {
+    color: #eee;
+}
+
+.sec-contents {
+    height: 100%;
+}
+
+.mod-body {
+    padding: 0 20px 20px 20px;
+    background: #f2f2f2;
+    height: 100%;
+}
+
+.mod-body .lunchItem {
+    margin: 50px 0 0 0;
+    padding: 40px 40px;
+    background: #fff;
+    border-top: 3px solid #ddd;
+    border-right: 3px solid #bbb;
+    border-bottom: 3px solid #999;
+    border-left: 3px solid #ccc;
+}
+
+.mod-body .lunchItem .about {
+    display: flex;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 40px;
+}
+
+.mod-body .lunchItem .about .date {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 190px;
+    height: 190px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background: #b5ffb5;
+    background: #f5f5f5;
+}
+
+.mod-body .lunchItem .about .date .month {
+    position: absolute;
+    z-index: 100;
+    display: block;
+    color: #aaa;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.mod-body .lunchItem .about .date .day {
+    position: absolute;
+    z-index: 100;
+    top: 100px;
+    display: block;
+    color: #181;
+    font-weight: bold;
+    font-size: 180%;
+}
+
+.mod-body .lunchItem .about .date .jp {
+    font-size: 70%;
+    color: #aaa;
+}
+
+.mod-body .lunchItem .about .date .dayOfTheWeek {
+    position: absolute;
+    padding: 0 0 10px 10px;
+    top: 10px;
+    right: 5px;
+    color: #181;
+    font-family: 'arial black';
+    font-size: 110%;
+    font-weight: bold;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+.mod-body .lunchItem .about .date .time {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    color: #aaa;
+}
+
+.mod-body .lunchItem .about .summary {
+    vertical-align: top;
+    padding: 0 0 0 30px;
+}
+
+.mod-body .lunchItem .about .summary .title {
+    margin-bottom: 45px;
+}
+
+.mod-body .lunchItem .about .summary .title span {
+    font-size: 150%;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-weight: bold;
+}
+
+.mod-body .lunchItem .about .summary .condition {
+    display: inline-block;
+    border-radius: 10px;
+    color: #aaa;
+    font-size: 90%;
+}
+
+.mod-body .lunchItem .about .summary .condition.max {
+    padding: 10px 20px;
+    background: #fee;
+}
+
+.mod-body .lunchItem .about .summary .condition.max img {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+}
+
+.mod-body .lunchItem .about .summary .condition.min img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.mod-body .lunchItem .about .summary .condition.max .maxPeopleNum {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 130%;
+    color: #b66;
+    vertical-align: bottom;
+}
+
+.mod-body .lunchItem .about .summary .num {
+    text-align: right;
+}
+
+.mod-body .lunchItem .about .summary .condition.min {
+    padding: 10px 20px;
+    background: #eef;
+}
+
+.mod-body .lunchItem .about .summary .condition.min .minPeopleNum {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 130%;
+    color: #66b;
+    vertical-align: bottom;
+}
+
+.mod-body .lunchItem .current {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.mod-body .lunchItem .current .now,
+.mod-body .lunchItem .current .remain
+{
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.mod-body .lunchItem .current .now .nowPeopleNum {
+    display: inline-block;
+    margin: 10px 8px;
+    font-weight: bold;
+    color: #181;
+    font-size: 160%;
+}
+
+.mod-body .lunchItem .current .remain {
+    position: relative;
+    border: 3px solid #eee;
+    border-radius: 15px;
+}
+
+.mod-body .lunchItem .current .remain .remainPeopleNum{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    color: #b22;
+    font-size: 160%;
+}
+
+.mod-body .lunchItem .current .remain .remainPeopleNum:before {
+    content: '';
+    position: absolute;
+	top: 50%;
+	left: -23px;
+ 	margin-top: -12px;
+	border: 12px solid transparent;
+	border-right: 12px solid #FFF;
+ 	z-index: 2;
+}
+
+.mod-body .lunchItem .current .remain .remainPeopleNum:after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -28px;
+ 	margin-top: -14px;
+	border: 14px solid transparent;
+	border-right: 14px solid #ccc;
+ 	z-index: 1;
+}
+
+.buttonArea .attend button {
+    margin-top: 20px;
+    padding: 40px 0;
+    width: 100%;
+    display: inline-block;
+    color: #181;
+    font-weight: bold;
+    font-size: 130%;
+    background: #fff;
+    border-radius: 25px;
+    border: 3px solid #181;
+}
+
+.buttonArea .attend button img {
+    display: inline-block;
+    margin-right: 20px;
+    width: 73px;
+    height: 73px;
+    vertical-align: middle;
+}
