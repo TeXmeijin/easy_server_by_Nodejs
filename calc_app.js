@@ -7,8 +7,8 @@ app.set('views', 'views');
 
 app.set('view engine', 'ejs');
 
-/* 2. listen()メソッドを実行して3000番ポートで待ち受け。*/
-var server = app.listen(3001, function(){
+/* 2. listen()メソッドを実行して4000番ポートで待ち受け。*/
+var server = app.listen(4001, function(){
     console.log("Node.js is listening to PORT:" + server.address().port);
 });
 
